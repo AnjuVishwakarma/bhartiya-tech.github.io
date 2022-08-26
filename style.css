@@ -1,0 +1,723 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'roboto' sans-serif;
+}
+
+.nav {
+    background-color: rgb(34, 34, 87);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.book-btn {
+    background-color: rgb(32, 32, 124);
+    color: white;
+    padding: 10px;
+    padding: 10px 34px;
+}
+
+.internship-btn {
+    background-color: rgb(228, 74, 18);
+    color: white;
+    padding: 10px 34px;
+    display: inline-block;
+}
+
+
+/* CAROUSEL SECTION */
+
+.img-container {
+    background-image: url('IMAGES/bimg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box {
+    border-top: 3px solid black;
+    background-color: white;
+    transition: .5s;
+    box-shadow: 0 0 12px -9px;
+}
+
+.box:hover {
+    transform: translate(-5px);
+    box-shadow: rgb(0 0 0 / 30%)0 0 40px;
+}
+
+.services-section {
+    background-image: url(' IMAGES/bg\ services.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.heading {
+    color: rgb(14, 14, 122);
+}
+
+.our {
+    color: rgb(21, 21, 97);
+}
+
+.services {
+    color: rgb(224, 65, 7);
+}
+
+.box2 {
+    background-color: white;
+    transition: .5s;
+    box-shadow: 0 0 12px -9px;
+}
+
+.box2:hover {
+    transform: translate(-10px);
+    box-shadow: rgb(0 0 0 / 30%)0 0 40px;
+}
+
+.box2 {
+    position: relative;
+}
+
+.box2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.box2::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.box2:hover::before,
+.box2:hover::after {
+    width: 100%;
+}
+
+.ready {
+    background-color: rgb(252, 77, 14);
+    color: white;
+}
+
+.fa-regular {
+    font-size: 60px;
+}
+
+.talk {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+
+/* WHATSAPP ICON SECTION */
+
+.whatsapp-icon a {
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    margin: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    animation: bounce 3s infinite;
+    z-index: 9999999999999999999;
+}
+
+.icon.active {
+    opacity: 1;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-30%);
+    }
+    50% {
+        transform: translateY(30%);
+    }
+}
+
+
+/* WE USE SECTION */
+
+.background-img {
+    background-image: url('IMAGES/background3.jpg');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.border {
+    background-color: rgb(14, 14, 95);
+}
+
+.postion {
+    position: relative;
+}
+
+.box6 {
+    position: absolute;
+    bottom: 30px;
+    left: 36%;
+}
+
+.box6 img {
+    border-radius: 50%;
+}
+
+.java {
+    color: white;
+}
+
+
+/* Explore Our Top Ranked Programs */
+
+.course1 a {
+    margin-bottom: 10px;
+    padding: 13px;
+    margin-left: 4px;
+    margin-right: 2px;
+    text-decoration: none;
+    background-color: rgb(224, 65, 7);
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.course a {
+    margin-bottom: 10px;
+    padding: 13px;
+    margin-left: 4px;
+    margin-right: 2px;
+    text-decoration: none;
+    background-color: rgb(14, 14, 95);
+    color: paleturquoise;
+    display: block;
+    text-align: center;
+}
+
+.card-heading a {
+    color: black;
+    text-decoration: none;
+}
+
+.card {
+    transition: .5s;
+    box-shadow: 0 0 12px -9px;
+}
+
+.card:hover {
+    transform: translate(-5px);
+    box-shadow: rgba(123, 120, 150, 0.932)0 0 40px;
+}
+
+
+/* Our Training Courses */
+
+.bgtraining-img {
+    background-image: url('IMAGES/bg-training.jpg');
+    width: 100%;
+}
+
+.training {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.training:hover {
+    background-color: orange;
+    color: white;
+}
+
+.training:hover .second {
+    display: inline-block;
+}
+
+.training:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* DIGITIAL MARKETING SECTION */
+
+.digit {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.digit:hover {
+    background-color: rgb(117, 63, 25);
+    color: white;
+}
+
+.digit:hover .second {
+    display: inline-block;
+}
+
+.digit:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* Website Design */
+
+.Website {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Website:hover {
+    background-color: rgb(50, 168, 214);
+    color: white;
+}
+
+.Website:hover .second {
+    display: inline-block;
+}
+
+.Website:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* PHP Web Development */
+
+.PHP {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.PHP:hover {
+    background-color: rgb(52, 98, 197);
+    color: white;
+}
+
+.PHP:hover .second {
+    display: inline-block;
+}
+
+.PHP:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* .Net section */
+
+.Net {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Net:hover {
+    background-color: rgb(212, 51, 100);
+    color: white;
+}
+
+.Net:hover .second {
+    display: inline-block;
+}
+
+.Net:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* Python Training */
+
+.Python {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Python:hover {
+    background-color: hsl(39, 100%, 50%);
+    color: white;
+}
+
+.Python:hover .second {
+    display: inline-block;
+}
+
+.Python:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* Android Development */
+
+.Android {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Android:hover {
+    background-color: #8bc92e;
+    color: white;
+}
+
+.Android:hover .second {
+    display: inline-block;
+}
+
+.Android:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* E-Commerce */
+
+.E-Commerce {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.E-Commerce:hover {
+    background-color: rgb(207, 45, 99);
+    color: white;
+}
+
+.E-Commerce:hover .second {
+    display: inline-block;
+}
+
+.E-Commerce:hover .first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+
+/* Bhartiya Tech Learner Support */
+
+.support {
+    background-image: url('IMAGES/bhartiya-tech-imgaes.jpg');
+    width: 100%;
+    height: 40vh;
+    padding-top: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
+.Email {
+    margin-top: -5%;
+    margin-left: 50%;
+}
+
+.learner {
+    font-size: 15px;
+}
+
+.footer-section {
+    background-color: rgb(18, 18, 32);
+    padding-bottom: 40px;
+    color: white;
+}
+
+
+/* FOOTER SECTION */
+
+.services1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.course2 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.facebook {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    color: navy;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.sub {
+    background-color: rgb(10, 10, 94);
+    color: white;
+    padding-left: 96px;
+    padding-right: 96px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ariport {
+    background-color: rgb(6, 6, 27);
+    color: white;
+}
+
+.term a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ABOUT US SECTION */
+
+.about-section {
+    background-image: url('IMAGES/about-us-banner-2\ \(1\).jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+.aboutus {
+    color: #fff;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.abt a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.head {
+    color: rgb(27, 27, 80);
+}
+
+.home a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.arrow {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: -36px;
+}
+
+
+/* We Expertise In  Web Mobile & Digital Services */
+
+.web-mobile {
+    border-top: 3px solid rgb(19, 19, 124);
+    background-color: white;
+    transition: .5s;
+    box-shadow: 0 0 12px -9px;
+}
+
+.web-mobile:hover {
+    transform: translateY(-10px);
+    box-shadow: rgb(0 0 0 / 30%)0 0 40px;
+}
+
+.learn-more a {
+    text-decoration: none;
+    color: rgb(226, 72, 17);
+}
+
+.webs {
+    margin-top: 10px;
+}
+
+.web-heading {
+    color: black;
+}
+
+
+/* VISION MISSION */
+
+.vision-mission {
+    background-image: url('IMAGES/our-work-speaks-for-itself-bg.jpg');
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.visi {
+    color: rgb(30, 30, 139);
+    margin-left: 200px;
+}
+
+.miss {
+    color: rgb(230, 77, 22);
+    margin-left: 200px;
+}
+
+.parag {
+    margin-left: 200px;
+    color: rgba(53, 51, 51, 0.911);
+}
+
+
+/* INTERNSHIP HOME SECTION */
+
+.intenship-section {
+    background-image: url('IMAGES/internship-training-banner.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+.inte {
+    color: rgb(247, 93, 37);
+}
+
+.markting-heading {
+    background-color: rgb(15, 15, 53);
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.card5 {
+    overflow: hidden;
+}
+
+.card-footer a {
+    text-decoration: none;
+    background-color: rgb(111, 111, 240);
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.card6 {
+    margin-left: 30px;
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+}
+
+.card7 {
+    background-color: white;
+    box-shadow: 0 0 12px -9px;
+    box-shadow: rgb(0 0 0 / 30%)0 0 40px;
+}
+
+
+/* Contact Us section */
+.form-box {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .input-box label,
+  .input-box .my-ininput,
+  .input-box textarea {
+    width: 100%;
+  }
+  .input-box input,
+  .input-box textarea {
+    border: 1px solid silver;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+ 
+
+.form2{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+.contactus-section {
+    background-image: url('IMAGES/bg-header-01.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px
+}
+
+.contect-information {
+    background-color: #35477D;
+    height: 80vh;
+    width: 100%;
+}
+
+.info {
+    color: #d9dbdf;
+    margin-left: 40px;
+    padding-top: 30px;
+}
